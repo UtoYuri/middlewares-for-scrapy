@@ -6,5 +6,4 @@
 
 from .middlewares import ZhimaProxy
 
-
 __version__ = "1.0.0"

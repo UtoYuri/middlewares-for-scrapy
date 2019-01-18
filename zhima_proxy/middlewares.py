@@ -84,7 +84,7 @@ class ZhimaProxy(object):
         response = requests.get(proxy_pool_api)
         try:
             response.raise_for_status()
-        except Exception as e:
+        except Exception as _:
             return None
         content = response.json()
         if content['success'] is False:
